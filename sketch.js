@@ -16,6 +16,7 @@ var scrollPos;
 var clouds;
 var mountains;
 var trees_x;
+var collectables;
 
 function setup() {
   createCanvas(1024, 576);
@@ -114,7 +115,6 @@ function draw() {
 
   // Draw trees.
   for (var i = 0; i < trees_x.length; i++) {
-    // console.log(trees_x[i]);
     //big tree
     fill(137, 103, 27);
     rect(trees_x[i], floorPos_y - 86, 19, 87);
